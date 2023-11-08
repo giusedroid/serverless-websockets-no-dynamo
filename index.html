@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <head>
+    <script src="./index.js"></script>
+    <style>
+      .pokemonImage {
+        width: 30vw;
+      }
+    </style>
+  </head>
+  <body>
+    <p> Enter your websocket endpoint in the input below, click connect and then click ask</p>
+    <p>
+      <b>Websocket endpoint</b>
+      <input id="websocketEndpoint">
+      <button id="connectButton" onClick="javascript:createConnection()">connect</button>
+      <button id="askButton" disabled onClick="javascript:ask('hello')">ask</button>
+    </p>
+    <p><b>Connected?</b> <span id="connectedBool">Nope: click on connect first!</span></p>
+    <p><b>ConnectionId:</b> <span id="connectionId"></span></p>
+    <p><b>Message:</b> <span id="message"></span></p>
+    <p><b>Pokemon Name:</b> <span id="pokemonName"></span> </p>
+    <p><img class="pokemonImage" id="pokemonImage"/></p>
+  </body>
+</html>
